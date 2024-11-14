@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Devanshu;
+}
+body{
+    background-color: #101010;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 50% 0, transparent 0, transparent 55%, rgba(42, 255, 81, 0.3) 66%, rgba(88, 255, 133, 0.7) 80%, #c8ffd5 100%);
+
+}
+@font-face {
+    font-family: Devanshu;
+    src: url("asset/SanFranciscoDisplay-Regular.otf") format("opentype");
+}
+.container{
+    width: 80%;
+    display: flex;
+    margin-top: 150px;
+    color: white;
+    justify-content: space-around;
+    
+}
+.about1>h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.about1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about2{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.about2 >img{
+    width: 200px;
+    height: 200px;
+}
+.about1 >p{
+    color: #858585;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about1{
+        width: 100%;
+    }
+    .about2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .container2{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  .navbar{
+    position:fixed;
+    top:10px;
+    height: 50px;
+    width:300px;
+    background-color:rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content:space-evenly;
+    padding: 5px;
+    align-items: center;
+    z-index: 10000;
+    gap: 5px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+
+}
+.homelogo{
+    position: relative;
+    padding: 2px;
+    color: white;
+}
+.projectlogo{
+    position: relative;
+    padding: 2px;
+    color: white;
+    width: 70px;
+}
+.userlogo{
+    position: relative;
+    padding: 2px;
+    color: white;
+}
+.homelogo:hover{
+    color:#F50C1B;
+    transition-duration: 0.5s;
+}
+.userlogo:hover{
+    color:#F50C1B;
+    transition-duration: 0.5s;
+}
+.projectlogo:hover{
+   color: #F50C1B;
+   transition-duration: 0.5s;
+}
+.myspan{
+    color: white;
+}
+.container2{
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.container2 >div{
+    width: 350px;
+    height: 150px;
+    background-color: #111111;
+    border: 3px solid #1D1D1D;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container2 >div:hover{
+    background-color: #161616;
+    transition-duration: 0.5s;
+}
+.con4>h2{
+   color: white;
+}
+.con4>p{
+    color:#7D7D7D;
+}
+.con4{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
