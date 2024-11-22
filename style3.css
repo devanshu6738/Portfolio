@@ -18,49 +18,52 @@ body{
     border-radius: 8px;
 }
 .windowthreebutton{
-    height: 40px;
+    height: 35px;
     width: 100%;
     border-radius: 8px 8px 0px 0px;
     background-color: black;
     display: flex;
     justify-content: flex-end;
 }
-.minimize{
-    background-color: white;
-    width: 16px;
-}
+
 .windowthree{
     display:flex;
     flex-direction: row-reverse;
     height: 100%;
     align-items: center;
-    padding: 5px;
-    gap: 5px;
 }
+button {
+    width: 40px;
+    height: 35px;
+    margin-left: -5px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    transition: 0.2s;
+  }
+  
+  button svg path, 
+  button svg rect, 
+  button svg polygon {
+    fill: #ffffff;
+  }
+  
+  button svg {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .close:hover {
+    background-color:#E81123;
+  }
+  
+  .maximize:hover {
+    background-color: #ffffff10;
+  }
+  
+  .minimize:hover {
+    background-color: #ffffff10;
+  }
 .close{
-    width: 22px;
-}
-.maximize{
-    width: 25px;
-}
-.windowthree div:nth-child(1):hover{
-    background-color: red;
-}
-.windowthree div:nth-child(2):hover{
-    background-color:#212121;
-}
-.windowthree div:nth-child(3):hover{
-    background-color: red;
-}
-.windowthree div:nth-child(1){
-    display: flex;
-    align-items: center;
-}
-.windowthree div:nth-child(2){
-    display: flex;
-    align-items: center;
-}
-.windowthree div:nth-child(3){
-    display: flex;
-    align-items: center;
+    border-radius: 0px 8px 0px 0px;
 }

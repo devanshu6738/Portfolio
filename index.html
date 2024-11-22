@@ -16,10 +16,59 @@
     
 </head>
 <body>
+    <div class="windowstart">
+        
+    </div>
  <div id="container1" class="container1">
+    <div class="smallwindow" id="smallwindow">
+        <div class="windowthreebutton">
+            <div class="windowthree">
+                <span class="buttons">
+                    <button class="minimize">
+                            <svg viewBox="0 0 10.2 1" y="0px" x="0px"><rect height="1" width="10.2" y="50%" x="0"></rect></svg>
+                        </button>
+                    <button class="maximize" id="max1">
+                            <svg viewBox="0 0 10 10"><path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path></svg>
+                        </button>
+                    <button class="close" id="close">
+                            <svg viewBox="0 0 10 10"><polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"></polygon></svg>
+                        </button>
+                    </span>
+                
+            </div>
+        </div>
+    </div>
+    <div class="smallwindow" id="smallwindow">
+        <div class="windowthreebutton">
+            <div class="windowthree">
+                <span class="buttons">
+                    <button class="minimize">
+                            <svg viewBox="0 0 10.2 1" y="0px" x="0px"><rect height="1" width="10.2" y="50%" x="0"></rect></svg>
+                        </button>
+                    <button class="maximize" id="max1">
+                            <svg viewBox="0 0 10 10"><path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path></svg>
+                        </button>
+                    <button class="close" id="close">
+                            <svg viewBox="0 0 10 10"><polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"></polygon></svg>
+                        </button>
+                    </span>
+                
+            </div>
+        </div>
+        <iframe 
+        id="iframe1" 
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" 
+        width="100%" 
+        height="100%" 
+        frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    
+    </div>
     <div class="container2">
         <div class="app1">
-            <div class="thispc">
+            <div class="thispc" id="thispc">
                 <img src="asset/icons8-this-pc-48.png" alt="">
                 <p>This Pc</p>
             </div>
@@ -31,7 +80,7 @@
                 <img src="asset/icons8-photos-48.png" alt="">
                 <p>Photos</p>
             </div>
-            <div class="photo">
+            <div class="photo" id="spotify1">
                 <img src="asset/icons8-spotify-48.png" alt="">
                 <p>Spotify</p>
             </div>
@@ -49,7 +98,9 @@
                 <img src="asset/icons8-instagram-48.png" alt="">
                 <p>Instagram</p>
             </div>
-            <div class="photo">
+        </div>
+        <div class="app2">
+            <div class="photo" id="chrome12">
                 <img src="asset/icons8-chrome-48.png" alt="">
                 <p>Chrome</p>
             </div>
@@ -64,7 +115,7 @@
             </div>
             <div class="Searchnav">
                 <div class="Searchlogo"><img src="asset/icons8-search.svg" alt=""></div>
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="Search" id="Search12">
             </div>
             
      </div>
