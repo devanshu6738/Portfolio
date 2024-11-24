@@ -1,5 +1,4 @@
 let windowbar=document.getElementById("windowbar")
-
 let windowlogo=document.getElementById("windowlogo")
 let container1=document.getElementById("container1")
 
@@ -10,28 +9,47 @@ windowlogo.addEventListener('click',()=>{
         windowbar.style.top="80px";
     }
 })
-let smallwindow=document.getElementById("smallwindow")
-let thispc=document.getElementById('thispc')
-thispc.addEventListener('dblclick',()=>{
-    smallwindow.style.display="block";
+
+let windowstart1=document.getElementById('windowstart1')
+setTimeout(()=>{
+    windowstart1.style.top="-1000px"
+},2000)
+
+let weathertele=document.getElementById('weathertele')
+let weather1=document.getElementById('weather1')
+
+weather1.addEventListener('click',()=>{
+    if(weathertele.style.left=='-2000px'){
+        weathertele.style.left='20px'
+    }else{
+        weathertele.style.left='-2000px'
+    }
 })
-let close=document.getElementById('close')
-close.addEventListener('click',(e)=>{
-    smallwindow.style.display="none";
+let smallwindow9=document.getElementById('smallwindow9')
+let chrome12=document.getElementById('chrome12')
+chrome12.addEventListener('dblclick',()=>{
+    smallwindow9.style.display="block";
 })
-let max1=document.getElementById('max1')
-max1.addEventListener('click',()=>{
-   if( smallwindow.style.width=="100vw"){
-    smallwindow.style.width="40%"
-    smallwindow.style.height="60%"
-    smallwindow.style.top="100px"
-   }else{
-    smallwindow.style.width="100vw"
-    smallwindow.style.height="100vh"
-    smallwindow.style.top="0"
-   }
+let googlesearch=document.getElementById('googlesearch')
+let google9=document.getElementById('google9')
+google9.addEventListener('click',()=>{
+    if(!googlesearch.value) return;
+    window.location = 'https://www.google.com/search?q=' + googlesearch.value;
 })
-let spotify1=document.getElementById('spotify1')
-spotify1.addEventListener('dblclick',()=>{
-    smallwindow.style.display="block";
+let close9=document.getElementById('close9')
+
+close9.addEventListener('click',()=>{
+    smallwindow9.style.display="none";
+})
+let maximize9=document.getElementById('maximize9')
+maximize9.addEventListener('click',()=>{
+    if( smallwindow9.style.width=="100vw"){
+        smallwindow9.style.width="40%"
+        smallwindow9.style.height="60%"
+        smallwindow9.style.top="100px"
+       }else{
+        smallwindow9.style.width="100vw"
+        smallwindow9.style.height="100vh"
+        smallwindow9.style.top="0"
+       }
 })

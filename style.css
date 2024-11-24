@@ -13,9 +13,7 @@
     font-family: Gupta;
     src: url("asset/SF-Pro-Display-Bold.otf");
 }
-body{
-    background-color: #131314;
-}
+
 .container1{
     position: relative;
     width: 100vw;
@@ -24,8 +22,9 @@ body{
     flex-direction: column;
     align-items: center;
     /* background-color:#101010; */
-    background-image: url("asset/windowwallpaper.jpg");
-    background-size: cover;
+    background-image: url("asset/wp10224237-windows-11-se-wallpapers.jpg");
+    background-size:cover;
+    background-position: center;
     overflow: hidden;
 }
 .navbar{
@@ -181,9 +180,12 @@ body{
     width: 90%;
     padding:5px 0px;
     border-radius: 20px;
+    height: 30px;
     background-color: #212830;
     border: none;
-    text-align:center;
+    color: white;
+    outline: none;
+    text-align: center;
 }
 .pinned{
     width: 90%;
@@ -305,13 +307,82 @@ body{
 }
 .windowstart{
     position: absolute;
-    background-color: #131314;
-    z-index: 100000;
+    top:0px;
+    background-color:#000000;
+    z-index: 1000000;
     width: 100vw;
     height: 100vh;
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    transition-duration:0.75s;
 }
-.smallwindow{
+
+.windowlogo1{
+    display: flex;
+    gap: 3px;
+}
+.windowlogo2{
+    display: flex;
+    gap: 3px;
+}
+.windowlogo3{
+    height: 50px;
+    width: 50px;
+    background-color: #0D85D3;
+}
+.circle{
+    margin-top: 150px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1rem solid #000;
+    border-top: 7px solid white;
+    border-left: 7px solid white;
+    animation: loader 1.5s linear infinite;
+  }
+  @keyframes loader {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  .weathertele{
+    height: 75vh;
+    width: 40vw;
+    background-color:rgba(255, 255, 255, 0.244);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    position: absolute;
+    left: -2000px;
+    top: 100px;
+    border-radius: 10px;
+    transition-duration:0.5s;
+  }
+  .searchleave{
+    display: flex;
+    gap: 10px;
+  }
+  #wifi{
+    height: 17px;
+    width: 17px;
+  }
+  .navtool{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .navtool:hover{
+    background-color: #434343d8;
+  }
+  #smallwindow9{
     display: none;
     width: 40%;
     height: 60%;
@@ -325,7 +396,7 @@ body{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     
 }
-.windowthreebutton{
+#windowthreebutton9{
     height: 35px;
     width: 100%;
     border-radius: 8px 8px 0px 0px;
@@ -334,13 +405,13 @@ body{
     justify-content: flex-end;
 }
 
-.windowthree{
+#windowthree9{
     display:flex;
     flex-direction: row-reverse;
     height: 100%;
     align-items: center;
 }
-button {
+.button9 {
     width: 40px;
     height: 35px;
     margin-left: -5px;
@@ -350,31 +421,55 @@ button {
     transition: 0.2s;
   }
   
-  button svg path, 
-  button svg rect, 
-  button svg polygon {
+  .button9 svg path, 
+  .button9 svg rect, 
+  .button9 svg polygon {
     fill: #ffffff;
   }
   
-  button svg {
+  .button9 svg {
     width: 10px;
     height: 10px;
   }
   
-  .close:hover {
+  #close9:hover {
     background-color:#E81123;
   }
   
-  .maximize:hover {
+  #maximize9:hover {
     background-color: #ffffff10;
   }
   
-  .minimize:hover {
+  #minimize9:hover {
     background-color: #ffffff10;
   }
-.close{
+#close9{
     border-radius: 0px 8px 0px 0px;
 }
-#iframe1{
-    border-radius: none;
+.googlechrome2{
+  height: 91%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#googlelogo{
+  height: 15%;
+}
+#googlesearch{
+  height: 10%;
+  width: 70%;
+  border-radius: 20px;
+  padding-left:10px;
+  outline: none;
+}
+.buttongoogle{
+  display: flex;
+  gap: 10px;
+}
+.buttongoogle>button{
+  padding: 5px;
+  border-radius: 3px;
 }
